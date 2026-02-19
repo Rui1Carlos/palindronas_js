@@ -1,8 +1,3 @@
-let nome
-let novaPalavra
-let qtd = 0
-let nomes=[]
-
 
 
 
@@ -12,20 +7,34 @@ function adicionarNome() {
 }
 
 
+
 let n
 function palindrona() {
-    let nova=""
-        for (let k = nome.length-1; k>= 0; k --) {
-            nova+=nome[k]   
+    let nomes = []
+    let palindronas = []
+
+    
+        for (let i = 0; i < 3; i++) {
+        let nova = ""
+        let nome = prompt("Digite uma palavra: ");
+        nomes.push(nome);
+
+        for (let k = nome.length - 1; k >= 0; k--) {
+            nova += nome[k]
         }
-    document.getElementById("mensagem").innerHTML = nova
-    if (nova == nome) {
-        document.getElementById("mensagem").innerHTML="é palindrona"
+        if (nova == nome) {
+            palindronas.push(nova)
+        }
+
+    }
+    if (palindronas.length > 0) {
+        alert("estas são as palavras palindronas " + palindronas)
+        alert("foram encontradas " + palindronas.length + " palavras palindronas")
     }
     else {
-        document.getElementById("mensagem").innerHTML = "não é palindrona"
+        document.getElementById("mensagem").innerText="não tem palavras palindronas"
     }
-    
+     
     
 }
 
