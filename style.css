@@ -1,7 +1,6 @@
-/* Estilo geral da página */
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+    background-color: rgba(0, 255, 255, 0.377);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,7 +8,7 @@ body {
     margin: 0;
 }
 
-/* Container principal */
+
 .container {
     background-color: #fff;
     padding: 30px;
@@ -19,14 +18,14 @@ body {
     width: 350px;
 }
 
-/* Label */
+
 .container label {
     font-weight: bold;
     color: #333;
 }
 
-/* Input de texto */
-.container input[type="text"] {
+
+.container #nome {
     width: 80%;
     padding: 10px;
     margin: 10px 0;
@@ -36,12 +35,8 @@ body {
     transition: 0.3s;
 }
 
-.container input[type="text"]:focus {
-    border-color: #ACB6E5;
-    box-shadow: 0 0 8px rgba(172, 182, 229, 0.6);
-}
 
-/* Botões */
+
 .container button {
     background: #74ebd5;
     border: none;
@@ -54,18 +49,18 @@ body {
 }
 
 .container button:hover {
-    background: #ACB6E5;
-    color: #fff;
+    
+   background-color: rgba(0, 255, 255, 0.377);
 }
 
-/* Mensagens */
+
 .container p {
     font-size: 14px;
     color: #444;
     margin-top: 10px;
 }
 
-/* Resultado */
+
 .container h1 {
     color: #333;
     margin: 15px 0;
